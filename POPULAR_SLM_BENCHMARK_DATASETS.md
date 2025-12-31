@@ -674,6 +674,6 @@ Benchmarks evolve constantly. If you know of important benchmarks not listed her
 
 ---
 
-*Last Updated: December 2025*
+*Last Updated: December 2024*
 
 *Note: Benchmark scores and availability are subject to change. Always verify current leaderboard standings and dataset availability before use.*
