@@ -1,0 +1,5 @@
+{"id":"short_qa_1","type":"chat","prompt":"In one sentence: what is overfitting in machine learning?"}
+{"id":"short_qa_2","type":"chat","prompt":"Give a concise explanation of Docker images vs containers."}
+{"id":"code_1","type":"chat","prompt":"Write a Python function `is_palindrome(s: str) -> bool` that ignores case and non-alphanumerics. Return only code."}
+{"id":"reasoning_1","type":"chat","prompt":"If a train travels 120 km in 1.5 hours, what is its average speed in km/h? Show your reasoning briefly."}
+{"id":"format_1","type":"chat","prompt":"Respond with valid JSON only: {\"a\": 1, \"b\": 2, \"sum\": 3}."}
