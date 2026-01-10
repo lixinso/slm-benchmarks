@@ -128,3 +128,9 @@ The script prints one JSON object per run (JSONL), plus summary stats at the end
 - Fix `--num_predict` and keep the same prompt suite.
 - Run when your machine is otherwise idle.
 - Record: macOS version, hardware, Ollama version, and model tag.
+
+
+## References
+
+- [Introducing Llama 3.1: Our most capable models to date](https://ai.meta.com/blog/meta-llama-3-1/)
+- 
