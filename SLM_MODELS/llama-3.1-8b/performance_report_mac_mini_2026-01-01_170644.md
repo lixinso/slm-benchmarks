@@ -1,4 +1,6 @@
-# Llama 3.1 8B Benchmark Report (Ollama)
+# Llama 3.1 8B Mac Mini Local Performance Report (Ollama)
+
+This report details the local performance benchmarks for the Llama 3.1 8B model running on a Mac Mini via Ollama. It focuses on efficiency metrics such as time to first token, generation speed, and prompt processing speed, rather than the model's inherent capabilities or accuracy as measured by official academic benchmarks.
 
 ## Run Info
 
