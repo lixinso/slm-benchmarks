@@ -130,6 +130,10 @@ The script prints one JSON object per run (JSONL), plus summary stats at the end
 - Record: macOS version, hardware, Ollama version, and model tag.
 
 
+## A Note on MMLU Benchmark Size
+The MMLU dataset used by `lm-evaluation-harness` consists of 15,908 questions across 57 subtasks. The number of questions varies for each subtask. A full benchmark run (without the `--limit` flag) will run on all of these questions.
+
+
 ## References
 
 - [Introducing Llama 3.1: Our most capable models to date](https://ai.meta.com/blog/meta-llama-3-1/)
