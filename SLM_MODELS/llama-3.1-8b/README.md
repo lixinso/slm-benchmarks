@@ -198,6 +198,17 @@ The script prints one JSON object per run (JSONL), plus summary stats at the end
 - Run when your machine is otherwise idle.
 - Record: macOS version, hardware, Ollama version, and model tag.
 
+### MPS Memory Errors on macOS
+
+If you encounter an "MPS backend out of memory" error while running benchmarks on a Mac with Apple Silicon, you can try one of the following:
+
+- **Reduce `batch_size`**: Lowering the `batch_size` in the `lm_eval` command can significantly reduce memory usage.
+- **Set `PYTORCH_MPS_HIGH_WATERMARK_RATIO`**: As a last resort, you can set the `PYTORCH_MPS_HIGH_WATERMARK_RATIO` environment variable to `0.0`. This disables the upper limit for memory allocations, which may allow the benchmark to complete. However, be aware that this can cause system instability or failure.
+
+  ```bash
+  PYTORCH_MPS_HIGH_WATERMARK_RATIO=0.0 .venv/bin/lm_eval ...
+  ```
+
 
 
 

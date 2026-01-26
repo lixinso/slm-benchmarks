@@ -1,5 +1,7 @@
 # slm-benchmarks
-A public repository on Benchmarking all kinds of SLM Models
+A public repository on benchmarking all kinds of SLM models.
+
+- Runs on MacMini M4
 
 ## Benchmark Results
 
