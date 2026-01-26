@@ -4,11 +4,11 @@ A public repository on Benchmarking all kinds of SLM Models
 ## Benchmark Results
 
 ### MMLU (5-shot)
-*Note: Preliminary results based on limited samples (10 per subtask).*
+*Note: Preliminary results based on limited samples (20 per subtask).*
 
 | Model | Overall | STEM | Humanities | Social Sciences | Other | Details |
 | :--- | :---: | :---: | :---: | :---: | :---: | :--- |
-| **Llama 3.1 8B** | **69.30%** | 58.95% | 76.15% | 76.67% | 70.77% | [Link](SLM_MODELS/llama-3.1-8b/mmlu_benchmark_setup_and_results_preliminary.md) |
+| **Llama 3.1 8B** | **68.42%** | 59.21% | 72.31% | 74.58% | 72.31% | [Link](SLM_MODELS/llama-3.1-8b/mmlu_benchmark_run_2026-01-25.md) |
 
 ## Documentation
 
