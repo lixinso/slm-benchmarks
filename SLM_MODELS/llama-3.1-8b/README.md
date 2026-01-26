@@ -6,70 +6,70 @@ This folder contains a minimal, repeatable benchmark harness for `llama3.1:8b` u
 
 This table summarizes the MMLU benchmark results for different configurations.
 
-| Task | `limit=10` | `limit=20` |
-| :--- | :---: | :---: |
-| **Overall (mmlu)** | **0.6930** | **0.6842** |
-| **humanities** | 0.7615 | 0.7231 |
-| - formal_logic | 0.5000 | 0.6000 |
-| - high_school_european_history | 0.8000 | 0.6000 |
-| - high_school_us_history | 0.9000 | 0.8500 |
-| - high_school_world_history | 0.9000 | 0.8000 |
-| - international_law | 1.0000 | 0.8500 |
-| - jurisprudence | 0.7000 | 0.7500 |
-| - logical_fallacies | 0.9000 | 0.7500 |
-| - moral_disputes | 0.5000 | 0.6000 |
-| - moral_scenarios | 0.5000 | 0.6500 |
-| - philosophy | 0.9000 | 0.7500 |
-| - prehistory | 0.8000 | 0.8500 |
-| - professional_law | 0.6000 | 0.5000 |
-| - world_religions | 0.9000 | 0.8500 |
-| **other** | 0.7077 | 0.7231 |
-| - business_ethics | 0.7000 | 0.8000 |
-| - clinical_knowledge | 0.7000 | 0.8000 |
-| - college_medicine | 0.9000 | 0.8000 |
-| - global_facts | 0.6000 | 0.5500 |
-| - human_aging | 0.6000 | 0.6000 |
-| - management | 0.8000 | 0.7500 |
-| - marketing | 0.6000 | 0.7000 |
-| - medical_genetics | 0.8000 | 0.8000 |
-| - miscellaneous | 0.9000 | 0.8500 |
-| - nutrition | 0.8000 | 0.7500 |
-| - professional_accounting | 0.4000 | 0.4500 |
-| - professional_medicine | 0.9000 | 0.9000 |
-| - virology | 0.5000 | 0.6500 |
-| **social sciences** | 0.7667 | 0.7458 |
-| - econometrics | 0.4000 | 0.4000 |
-| - high_school_geography | 0.8000 | 0.8500 |
-| - high_school_government_and_politics | 0.9000 | 0.9000 |
-| - high_school_macroeconomics | 0.8000 | 0.6000 |
-| - high_school_microeconomics | 0.6000 | 0.7000 |
-| - high_school_psychology | 0.9000 | 0.8500 |
-| - human_sexuality | 0.9000 | 0.8000 |
-| - professional_psychology | 0.9000 | 0.8000 |
-| - public_relations | 0.6000 | 0.5500 |
-| - security_studies | 0.8000 | 0.8500 |
-| - sociology | 0.7000 | 0.7000 |
-| - us_foreign_policy | 0.9000 | 0.9500 |
-| **stem** | 0.5895 | 0.5921 |
-| - abstract_algebra | 0.6000 | 0.4500 |
-| - anatomy | 0.7000 | 0.7500 |
-| - astronomy | 0.8000 | 0.8500 |
-| - college_biology | 0.9000 | 0.9000 |
-| - college_chemistry | 0.6000 | 0.5000 |
-| - college_computer_science | 0.4000 | 0.4500 |
-| - college_mathematics | 0.1000 | 0.3000 |
-| - college_physics | 0.5000 | 0.5500 |
-| - computer_security | 0.7000 | 0.6500 |
-| - conceptual_physics | 0.7000 | 0.8000 |
-| - electrical_engineering | 0.5000 | 0.5000 |
-| - elementary_mathematics | 0.4000 | 0.3000 |
-| - high_school_biology | 0.9000 | 0.9000 |
-| - high_school_chemistry | 0.6000 | 0.6000 |
-| - high_school_computer_science | 0.8000 | 0.8500 |
-| - high_school_mathematics | 0.3000 | 0.3500 |
-| - high_school_physics | 0.4000 | 0.3500 |
-| - high_school_statistics | 0.8000 | 0.6500 |
-| - machine_learning | 0.5000 | 0.5500 | 
+| Task | `limit=10` | `limit=20` | Official |
+| :--- | :---: | :---: | :---: |
+| **Overall (mmlu)** | **0.6930** | **0.6842** | **0.667** |
+| **humanities** | 0.7615 | 0.7231 | N/A |
+| - formal_logic | 0.5000 | 0.6000 | N/A |
+| - high_school_european_history | 0.8000 | 0.6000 | N/A |
+| - high_school_us_history | 0.9000 | 0.8500 | N/A |
+| - high_school_world_history | 0.9000 | 0.8000 | N/A |
+| - international_law | 1.0000 | 0.8500 | N/A |
+| - jurisprudence | 0.7000 | 0.7500 | N/A |
+| - logical_fallacies | 0.9000 | 0.7500 | N/A |
+| - moral_disputes | 0.5000 | 0.6000 | N/A |
+| - moral_scenarios | 0.5000 | 0.6500 | N/A |
+| - philosophy | 0.9000 | 0.7500 | N/A |
+| - prehistory | 0.8000 | 0.8500 | N/A |
+| - professional_law | 0.6000 | 0.5000 | N/A |
+| - world_religions | 0.9000 | 0.8500 | N/A |
+| **other** | 0.7077 | 0.7231 | N/A |
+| - business_ethics | 0.7000 | 0.8000 | N/A |
+| - clinical_knowledge | 0.7000 | 0.8000 | N/A |
+| - college_medicine | 0.9000 | 0.8000 | N/A |
+| - global_facts | 0.6000 | 0.5500 | N/A |
+| - human_aging | 0.6000 | 0.6000 | N/A |
+| - management | 0.8000 | 0.7500 | N/A |
+| - marketing | 0.6000 | 0.7000 | N/A |
+| - medical_genetics | 0.8000 | 0.8000 | N/A |
+| - miscellaneous | 0.9000 | 0.8500 | N/A |
+| - nutrition | 0.8000 | 0.7500 | N/A |
+| - professional_accounting | 0.4000 | 0.4500 | N/A |
+| - professional_medicine | 0.9000 | 0.9000 | N/A |
+| - virology | 0.5000 | 0.6500 | N/A |
+| **social sciences** | 0.7667 | 0.7458 | N/A |
+| - econometrics | 0.4000 | 0.4000 | N/A |
+| - high_school_geography | 0.8000 | 0.8500 | N/A |
+| - high_school_government_and_politics | 0.9000 | 0.9000 | N/A |
+| - high_school_macroeconomics | 0.8000 | 0.6000 | N/A |
+| - high_school_microeconomics | 0.6000 | 0.7000 | N/A |
+| - high_school_psychology | 0.9000 | 0.8500 | N/A |
+| - human_sexuality | 0.9000 | 0.8000 | N/A |
+| - professional_psychology | 0.9000 | 0.8000 | N/A |
+| - public_relations | 0.6000 | 0.5500 | N/A |
+| - security_studies | 0.8000 | 0.8500 | N/A |
+| - sociology | 0.7000 | 0.7000 | N/A |
+| - us_foreign_policy | 0.9000 | 0.9500 | N/A |
+| **stem** | 0.5895 | 0.5921 | N/A |
+| - abstract_algebra | 0.6000 | 0.4500 | N/A |
+| - anatomy | 0.7000 | 0.7500 | N/A |
+| - astronomy | 0.8000 | 0.8500 | N/A |
+| - college_biology | 0.9000 | 0.9000 | N/A |
+| - college_chemistry | 0.6000 | 0.5000 | N/A |
+| - college_computer_science | 0.4000 | 0.4500 | N/A |
+| - college_mathematics | 0.1000 | 0.3000 | N/A |
+| - college_physics | 0.5000 | 0.5500 | N/A |
+| - computer_security | 0.7000 | 0.6500 | N/A |
+| - conceptual_physics | 0.7000 | 0.8000 | N/A |
+| - electrical_engineering | 0.5000 | 0.5000 | N/A |
+| - elementary_mathematics | 0.4000 | 0.3000 | N/A |
+| - high_school_biology | 0.9000 | 0.9000 | N/A |
+| - high_school_chemistry | 0.6000 | 0.6000 | N/A |
+| - high_school_computer_science | 0.8000 | 0.8500 | N/A |
+| - high_school_mathematics | 0.3000 | 0.3500 | N/A |
+| - high_school_physics | 0.4000 | 0.3500 | N/A |
+| - high_school_statistics | 0.8000 | 0.6500 | N/A |
+| - machine_learning | 0.5000 | 0.5500 | N/A | 
 
 ## What “benchmark Llama 3.1 8B” should mean
 
@@ -208,4 +208,4 @@ The MMLU dataset used by `lm-evaluation-harness` consists of 15,908 questions ac
 ## References
 
 - [Introducing Llama 3.1: Our most capable models to date](https://ai.meta.com/blog/meta-llama-3-1/)
-- 
+
