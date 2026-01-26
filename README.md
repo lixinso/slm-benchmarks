@@ -1,4 +1,5 @@
-# slm-benchmarks
+# Small Language Models (SLMs) Benchmarking
+
 A public repository on benchmarking all kinds of SLM models.
 
 - Runs on MacMini M4
