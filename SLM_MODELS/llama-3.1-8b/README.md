@@ -6,70 +6,70 @@ This folder contains a minimal, repeatable benchmark harness for `llama3.1:8b` u
 
 This table summarizes the MMLU benchmark results for different configurations.
 
-| Task | `limit=10` | `limit=20` | `limit=50` | Official |
-| :--- | :---: | :---: | :---: | :---: |
-| **Overall (mmlu)** | **0.6930** | **0.6842** | **0.6825** | **0.667** |
-| **humanities** | 0.7615 | 0.7231 | 0.7169 | N/A |
-| - formal_logic | 0.5000 | 0.6000 | 0.5600 | N/A |
-| - high_school_european_history | 0.8000 | 0.6000 | 0.7200 | N/A |
-| - high_school_us_history | 0.9000 | 0.8500 | 0.8400 | N/A |
-| - high_school_world_history | 0.9000 | 0.8000 | 0.7800 | N/A |
-| - international_law | 1.0000 | 0.8500 | 0.8400 | N/A |
-| - jurisprudence | 0.7000 | 0.7500 | 0.7800 | N/A |
-| - logical_fallacies | 0.9000 | 0.7500 | 0.8200 | N/A |
-| - moral_disputes | 0.5000 | 0.6000 | 0.6200 | N/A |
-| - moral_scenarios | 0.5000 | 0.6500 | 0.5800 | N/A |
-| - philosophy | 0.9000 | 0.7500 | 0.6800 | N/A |
-| - prehistory | 0.8000 | 0.8500 | 0.7600 | N/A |
-| - professional_law | 0.6000 | 0.5000 | 0.5000 | N/A |
-| - world_religions | 0.9000 | 0.8500 | 0.8400 | N/A |
-| **other** | 0.7077 | 0.7231 | 0.7169 | N/A |
-| - business_ethics | 0.7000 | 0.8000 | 0.7400 | N/A |
-| - clinical_knowledge | 0.7000 | 0.8000 | 0.7400 | N/A |
-| - college_medicine | 0.9000 | 0.8000 | 0.7200 | N/A |
-| - global_facts | 0.6000 | 0.5500 | 0.3800 | N/A |
-| - human_aging | 0.6000 | 0.6000 | 0.7000 | N/A |
-| - management | 0.8000 | 0.7500 | 0.8400 | N/A |
-| - marketing | 0.6000 | 0.7000 | 0.8600 | N/A |
-| - medical_genetics | 0.8000 | 0.8000 | 0.7600 | N/A |
-| - miscellaneous | 0.9000 | 0.8500 | 0.8600 | N/A |
-| - nutrition | 0.8000 | 0.7500 | 0.8400 | N/A |
-| - professional_accounting | 0.4000 | 0.4500 | 0.5000 | N/A |
-| - professional_medicine | 0.9000 | 0.9000 | 0.8200 | N/A |
-| - virology | 0.5000 | 0.6500 | 0.5600 | N/A |
-| **social sciences** | 0.7667 | 0.7458 | 0.7533 | N/A |
-| - econometrics | 0.4000 | 0.4000 | 0.4400 | N/A |
-| - high_school_geography | 0.8000 | 0.8500 | 0.8000 | N/A |
-| - high_school_government_and_politics | 0.9000 | 0.9000 | 0.9400 | N/A |
-| - high_school_macroeconomics | 0.8000 | 0.6000 | 0.7000 | N/A |
-| - high_school_microeconomics | 0.6000 | 0.7000 | 0.7800 | N/A |
-| - high_school_psychology | 0.9000 | 0.8500 | 0.8800 | N/A |
-| - human_sexuality | 0.9000 | 0.8000 | 0.7800 | N/A |
-| - professional_psychology | 0.9000 | 0.8000 | 0.6400 | N/A |
-| - public_relations | 0.6000 | 0.5500 | 0.6600 | N/A |
-| - security_studies | 0.8000 | 0.8500 | 0.7400 | N/A |
-| - sociology | 0.7000 | 0.7000 | 0.8000 | N/A |
-| - us_foreign_policy | 0.9000 | 0.9500 | 0.8800 | N/A |
-| **stem** | 0.5895 | 0.5921 | 0.5905 | N/A |
-| - abstract_algebra | 0.6000 | 0.4500 | 0.3800 | N/A |
-| - anatomy | 0.7000 | 0.7500 | 0.6800 | N/A |
-| - astronomy | 0.8000 | 0.8500 | 0.8200 | N/A |
-| - college_biology | 0.9000 | 0.9000 | 0.9000 | N/A |
-| - college_chemistry | 0.6000 | 0.5000 | 0.4600 | N/A |
-| - college_computer_science | 0.4000 | 0.4500 | 0.5600 | N/A |
-| - college_mathematics | 0.1000 | 0.3000 | 0.3800 | N/A |
-| - college_physics | 0.5000 | 0.5500 | 0.4600 | N/A |
-| - computer_security | 0.7000 | 0.6500 | 0.7800 | N/A |
-| - conceptual_physics | 0.7000 | 0.8000 | 0.5800 | N/A |
-| - electrical_engineering | 0.5000 | 0.5000 | 0.6000 | N/A |
-| - elementary_mathematics | 0.4000 | 0.3000 | 0.4800 | N/A |
-| - high_school_biology | 0.9000 | 0.9000 | 0.7800 | N/A |
-| - high_school_chemistry | 0.6000 | 0.6000 | 0.6200 | N/A |
-| - high_school_computer_science | 0.8000 | 0.8500 | 0.8000 | N/A |
-| - high_school_mathematics | 0.3000 | 0.3500 | 0.4000 | N/A |
-| - high_school_physics | 0.4000 | 0.3500 | 0.4800 | N/A |
-| - high_school_statistics | 0.8000 | 0.6500 | 0.5400 | N/A |
-| - machine_learning | 0.5000 | 0.5500 | 0.5200 | N/A |
+| Task | `limit=10` | `limit=20` | `limit=50` | `limit=100` | Official |
+| :--- | :---: | :---: | :---: | :---: | :---: |
+| **Overall (mmlu)** | **0.6930** | **0.6842** | **0.6825** | **0.6784** | **0.667** |
+| **humanities** | 0.7615 | 0.7231 | 0.7169 | 0.7200 | N/A |
+| - formal_logic | 0.5000 | 0.6000 | 0.5600 | 0.5000 | N/A |
+| - high_school_european_history | 0.8000 | 0.6000 | 0.7200 | 0.7400 | N/A |
+| - high_school_us_history | 0.9000 | 0.8500 | 0.8400 | 0.8500 | N/A |
+| - high_school_world_history | 0.9000 | 0.8000 | 0.7800 | 0.7800 | N/A |
+| - international_law | 1.0000 | 0.8500 | 0.8400 | 0.8200 | N/A |
+| - jurisprudence | 0.7000 | 0.7500 | 0.7800 | 0.7600 | N/A |
+| - logical_fallacies | 0.9000 | 0.7500 | 0.8200 | 0.7900 | N/A |
+| - moral_disputes | 0.5000 | 0.6000 | 0.6200 | 0.7100 | N/A |
+| - moral_scenarios | 0.5000 | 0.6500 | 0.5800 | 0.5600 | N/A |
+| - philosophy | 0.9000 | 0.7500 | 0.6800 | 0.7500 | N/A |
+| - prehistory | 0.8000 | 0.8500 | 0.7600 | 0.7800 | N/A |
+| - professional_law | 0.6000 | 0.5000 | 0.5000 | 0.5100 | N/A |
+| - world_religions | 0.9000 | 0.8500 | 0.8400 | 0.8100 | N/A |
+| **other** | 0.7077 | 0.7231 | 0.7169 | 0.7123 | N/A |
+| - business_ethics | 0.7000 | 0.8000 | 0.7400 | 0.6900 | N/A |
+| - clinical_knowledge | 0.7000 | 0.8000 | 0.7400 | 0.7400 | N/A |
+| - college_medicine | 0.9000 | 0.8000 | 0.7200 | 0.7100 | N/A |
+| - global_facts | 0.6000 | 0.5500 | 0.3800 | 0.4000 | N/A |
+| - human_aging | 0.6000 | 0.6000 | 0.7000 | 0.6700 | N/A |
+| - management | 0.8000 | 0.7500 | 0.8400 | 0.8200 | N/A |
+| - marketing | 0.6000 | 0.7000 | 0.8600 | 0.8800 | N/A |
+| - medical_genetics | 0.8000 | 0.8000 | 0.7600 | 0.7700 | N/A |
+| - miscellaneous | 0.9000 | 0.8500 | 0.8600 | 0.8400 | N/A |
+| - nutrition | 0.8000 | 0.7500 | 0.8400 | 0.7900 | N/A |
+| - professional_accounting | 0.4000 | 0.4500 | 0.5000 | 0.5400 | N/A |
+| - professional_medicine | 0.9000 | 0.9000 | 0.8200 | 0.8600 | N/A |
+| - virology | 0.5000 | 0.6500 | 0.5600 | 0.5500 | N/A |
+| **social sciences** | 0.7667 | 0.7458 | 0.7533 | 0.7683 | N/A |
+| - econometrics | 0.4000 | 0.4000 | 0.4400 | 0.5200 | N/A |
+| - high_school_geography | 0.8000 | 0.8500 | 0.8000 | 0.7900 | N/A |
+| - high_school_government_and_politics | 0.9000 | 0.9000 | 0.9400 | 0.9100 | N/A |
+| - high_school_macroeconomics | 0.8000 | 0.6000 | 0.7000 | 0.7300 | N/A |
+| - high_school_microeconomics | 0.6000 | 0.7000 | 0.7800 | 0.7800 | N/A |
+| - high_school_psychology | 0.9000 | 0.8500 | 0.8800 | 0.8900 | N/A |
+| - human_sexuality | 0.9000 | 0.8000 | 0.7800 | 0.8100 | N/A |
+| - professional_psychology | 0.9000 | 0.8000 | 0.6400 | 0.6700 | N/A |
+| - public_relations | 0.6000 | 0.5500 | 0.6600 | 0.6900 | N/A |
+| - security_studies | 0.8000 | 0.8500 | 0.7400 | 0.7400 | N/A |
+| - sociology | 0.7000 | 0.7000 | 0.8000 | 0.8300 | N/A |
+| - us_foreign_policy | 0.9000 | 0.9500 | 0.8800 | 0.8600 | N/A |
+| **stem** | 0.5895 | 0.5921 | 0.5905 | 0.5700 | N/A |
+| - abstract_algebra | 0.6000 | 0.4500 | 0.3800 | 0.3500 | N/A |
+| - anatomy | 0.7000 | 0.7500 | 0.6800 | 0.6500 | N/A |
+| - astronomy | 0.8000 | 0.8500 | 0.8200 | 0.7300 | N/A |
+| - college_biology | 0.9000 | 0.9000 | 0.9000 | 0.8300 | N/A |
+| - college_chemistry | 0.6000 | 0.5000 | 0.4600 | 0.4700 | N/A |
+| - college_computer_science | 0.4000 | 0.4500 | 0.5600 | 0.5700 | N/A |
+| - college_mathematics | 0.1000 | 0.3000 | 0.3800 | 0.3600 | N/A |
+| - college_physics | 0.5000 | 0.5500 | 0.4600 | 0.4300 | N/A |
+| - computer_security | 0.7000 | 0.6500 | 0.7800 | 0.7500 | N/A |
+| - conceptual_physics | 0.7000 | 0.8000 | 0.5800 | 0.5700 | N/A |
+| - electrical_engineering | 0.5000 | 0.5000 | 0.6000 | 0.6600 | N/A |
+| - elementary_mathematics | 0.4000 | 0.3000 | 0.4800 | 0.4600 | N/A |
+| - high_school_biology | 0.9000 | 0.9000 | 0.7800 | 0.7600 | N/A |
+| - high_school_chemistry | 0.6000 | 0.6000 | 0.6200 | 0.6000 | N/A |
+| - high_school_computer_science | 0.8000 | 0.8500 | 0.8000 | 0.7400 | N/A |
+| - high_school_mathematics | 0.3000 | 0.3500 | 0.4000 | 0.4100 | N/A |
+| - high_school_physics | 0.4000 | 0.3500 | 0.4800 | 0.4800 | N/A |
+| - high_school_statistics | 0.8000 | 0.6500 | 0.5400 | 0.5300 | N/A |
+| - machine_learning | 0.5000 | 0.5500 | 0.5200 | 0.4800 | N/A |
 
 ## What “benchmark Llama 3.1 8B” should mean
 
